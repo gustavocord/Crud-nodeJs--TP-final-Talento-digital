@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{title}}</title>
+    {{>head}}
+</head>
+<body>
+    {{>navigation}}
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="sidenav">
+         <div class="login-main-text">
+            <h2><br> Login Page</h2>
+            <p>Para continuar ingrese su usuario y contraseña.</p>
+         </div>
+      </div>
+      <div class="main">
+         <div class="col-md-6 col-sm-12">
+            <div class="login-form">
+              <form action="/login" method="POST">
+                  <div class="form-group">
+                     <label>User Name</label>
+                     <input type="text" class="form-control" name="usuario" id="usuario" value="{{usuario}}">   
+                  </div>
+                  <div class="form-group">
+                     <label>Password</label>
+                     <input type="password" class="form-control" placeholder="Password" name="password" id="password"> <br>  
+                  </div>
+                  <button type="submit" class="btn btn-black">Login</button>
+             </form>
+                  <button type="submit" class="btn btn-secondary"><a href="/ver_registracion"></ahref="/registracion">Register</button>
+               
+            </div>
+         </div>
+      </div>
+
+ {{> footer}} 
+</body>
+</html>
+

@@ -1,0 +1,149 @@
+body {
+  background: #00d2ff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+
+
+  }
+  #wrapper {
+    min-height: 100%;
+    position: relative;
+}
+  .navbar-brand {
+    font-family: 'Spicy Rice', cursive;
+    font-size: 1.5rem;
+    color: #F2F2F2;
+    
+    
+  }
+  
+  .navbar-brand:hover , .dropdown-item:hover {
+    color: #f12711;
+    
+  }
+  
+  
+  .navbar-expand-lg ,.dropdown-menu{
+   background: black;
+ 
+  }
+  .navbar-expand-lg:hover{color:#f12711 ;}
+  
+  .nav-link ,.dropdown-item {
+    text-transform: uppercase;
+    font-family: 'Spicy Rice', cursive;
+    color:#F2F2F2;
+  }
+
+
+  .nav-link:hover {
+      color: #f12711;
+
+  }
+
+  
+  header img {
+    width: 60%;
+  }
+
+  #footer {
+    width: 100%;
+    height: 81px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#content {
+  /* ... */
+  padding-bottom: 81px; /* El tamaño del footer para evitar el sobreposicionamiento */
+}
+html, body {
+  height: 100%;
+}
+
+
+/*nav*/
+body {
+  font-family: "Lato", sans-serif;
+}
+
+#footer {
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:30px;
+  width:100%;
+  background:#999;
+}
+
+.main-head{
+  height: 150px;
+  background: #FFF;
+ 
+}
+
+.sidenav {
+  height: 100%;
+  background-color: #000;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+
+.main {
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+}
+
+@media screen and (max-width: 450px) {
+  .login-form{
+      margin-top: 10%;
+  }
+
+  .register-form{
+      margin-top: 10%;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .main{
+      margin-left: 40%; 
+  }
+
+  .sidenav{
+      width: 40%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+  }
+
+  .login-form{
+      margin-top: 80%;
+  }
+
+  .register-form{
+      margin-top: 20%;
+  }
+}
+
+
+.login-main-text{
+  margin-top: 20%;
+  padding: 60px;
+  color: #fff;
+}
+
+.login-main-text h2{
+  font-weight: 300;
+}
+
+.btn-black{
+  background-color: #000 !important;
+  color: #fff;
+}
+

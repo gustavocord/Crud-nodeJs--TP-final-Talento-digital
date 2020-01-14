@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/css/novedades.css">
+    {{>head}}
+</head>
+<body>
+{{>navigation}}
+<h2>Novedades</h2>
+
+<table>
+  <tr>
+    <th>novedad</th>
+    <th>Firma</th>
+    <th>fecha</th>
+
+ </tr>
+  {{#each novedades}} 
+  <tr>
+     
+    <td>{{this.novedad}}</td>
+    <td>{{this.firma}}</td>
+    <td>{{this.fecha}}</td>
+   
+    {{/each}} 
+     
+    
+   
+    
+  </tr>
+    
+    
+</table>
+
+
+
+ {{> footer}} 
+</body>
+</html>
+
+
+</html>

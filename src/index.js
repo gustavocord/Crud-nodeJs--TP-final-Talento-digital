@@ -189,8 +189,9 @@ app.post('/api/agregar_novedad', async function(req, res) {
 
 
 
+app.set('PUERTO', 8080)
+const PORT = process.env.PORT || app.get('PUERTO')
 
-
-app.listen(3000, function() {
+app.listen(PORT, function() {
     console.log('Corriendo en el puerto 3000');
 });
